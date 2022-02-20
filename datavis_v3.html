@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="viewport" content="width=device-width, user-scalable=no"> 
+<link id="default-style-css" rel="stylesheet" type="text/css" href="css/main.css">
+<link id="mquerries-style-css" rel="stylesheet" type="text/css" href="css/mquerries.css" media="all">
+<link href="https://fonts.googleapis.com/css?family=Lato:thin,thinitalic,light,lightitalic,regular,regularitalic,bold,bolditalic" rel="stylesheet"> 
+ <style>
+@import url('https://fonts.googleapis.com/css?family=Lato');
+</style> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62091484-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<script>
+    function openNav(){
+        document.getElementById("nav").style.height = "100%"
+    }
+</script>
+<script>
+    function closeNav(){
+        document.getElementById("nav").style.height = "0%"
+    }
+</script>
+<title>Jeffrey Gottwald | UX/IA</title>
+</head>
+
+<body>
+	<header>
+			<div class="sticky-header">
+				<div class="header-inner">
+					<div id="logo">
+						<a href="http://jeffreygottwald.io/index.html"><img src="images/logos/lab_head.svg"></a>
+					</div>
+				</div>
+
+		    	<label class="menu-open" onclick="openNav()"><h4>MENU</h4></label>
+			</div>
+		</header>
+		<div id="nav" class="nav-overlay">
+			<!-- Button to close navigation overlay -->
+			<a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+
+			<!--Overlay Content/Menu-->
+			<div class="overlay-content">
+					<a href="http://www.jeffreygottwald.io/index.html">Work</a>
+    				<a href="http://www.jeffreygottwald.io/about.html">About</a>
+    				<a href="http://jeffreygottwald.io/resume.html">Résumé</a>
+    				<a href="mailto:jeffrey.gottwald@gmail.com">Contact</a>
+    		</div>
+		</div>
+
+		<div class="spacer spacer-small"></div>
+		<div id="hero" class="hero">
+			<div>
+				<div class="hero-image">
+					<img src="http://jeffreygottwald.io/images/data_vis/dataVis_hero.png">
+				</div>
+				<div id="projectHeader">
+					<h1>Data Visualization</h1>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="credits">
+			<div>
+				<div class="span-credits">
+					<h3>CLIENT</h3>
+					<img src="http://jeffreygottwald.io/images/logos/ibmlogo.png" class="span-logo">
+				</div>
+				<div class="span-credits">
+					<h3>EMPLOYER</h3>
+					<img src="http://jeffreygottwald.io/images/logos/ibmlogo.png" class="span-logo">
+				</div>
+				<div class="span-credits">
+					<h3>MY ROLE</h3>
+					<li>Ideation</li>
+					<li>Information Architect</li>
+					<li>UX Design</li>
+				</div>
+			</div>
+		</div>
+
+		<div class="po-container">
+			<h2>PROJECT OVERVIEW</h2>
+			<p>The challenge with monitoring social channels during real-time events is being able to digest information across multiple social channels efficiently, and curating a meaningful response. Our end goal was to create a platform that allowed content managers to monitor the conversation around our sponsored real-time events efficentialy while fully grasping the conversation around it. This would allow the content manager to create more impactful responses, and messages addded to the conversation. </p>
+		</div>
+
+
+		<div class="po-container">
+			<h2>PROCESS</h2>
+			<p>First things first, how would the metrics be broken up? What buckets would certain things fall into? What buckets were the most important? In short, data is kinda like a natural resource in a lot of ways. We are always looking for where, and what new information might be mined. Simplest way to figure this out is to start asking asking questions with answering them in a manner that ultimately came down to what would be the highest prioty for the end user.</p>
+			<img src="http://jeffreygottwald.io/images/data_vis/smcc_site_map.png">
+			<div class="spacer spacer-work"></div>
+
+		<div class="spacer spacer-small"></div>
+			<P>flow charts? paper sketches.</P>
+			<img src="http://jeffreygottwald.io/images/uso/uso_paper_wires.png">
+
+		<div class="spacer spacer-small"></div>
+			<p>Flow Chart blurb</p>
+			<img src="images/data-vis/smcc_02.png">
+		</div>
+	
+		<div class=" slide_container slide-display-container">
+			<img class="dataVis_slides" src="images/data-vis/smcc_01.jpeg">
+			<img class="dataVis_slides" src="images/data-vis/smcc_03.jpeg">
+			<img class="dataVis_slides" src="images/data-vis/smcc_04.jpeg">
+			<img class="dataVis_slides" src="images/data-vis/smcc_05.jpeg">
+
+			<button class="carButton black display-left" onclick="plusDivs(-1)">&#10094;</button>
+  			<button class="carButton black display-right" onclick="plusDivs(1)">&#10095;</button>
+
+		</div>
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("dataVis_slides");
+			  if (n > x.length) {slideIndex = 1}    
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+			     x[i].style.display = "none";  
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			}
+
+		</script>
+
+
+		<div class="spacer spacer-work"></div>
+		<p>Thank you to IBM Corporate marketing. </p>
+		<div class="spacer spacer-medium"></div>
+		<hr></h>
+	
+
+	<footer>
+		<div id="footer">
+			<p class="thank-you">"We must all do what we must do, for if we do not, then what we must do does not get done"</p>
+			<p class="thank-you lato-light-italic">Chung Mee - Volunteers</p>
+			<h5 class="copyright">Copyright &copy; 2016, Gebaut von JEFF</h5>
+		</div>
+	</footer>
+
+</body>
