@@ -1,0 +1,31 @@
+
+
+@media (min-width:320px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat (8, 1fr);
+    }
+}
+
+@media (min-width:768px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat (8, 1fr);
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat (12, 1fr);
+    }
+
+    .container div{
+        justify-self: center;
+        align-self:center;
+    }
+}
+
+
+
